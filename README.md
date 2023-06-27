@@ -1,5 +1,7 @@
 **Front-end. Вопросы на собеседовании**
 
+Репозиторий, содержит коллекцию вопросов, которые можно получить на техническом собеседовании на вакансию Junior/Middle Front-end разработчик. 
+
 **Темы вопросов:** 
 - [x] [Web Technologies (общие вопросы по веб-разработке)](./questions/web.md)
 - [x] [Web API (вопросы из веб API)](./questions/web-api.md)
@@ -20,4 +22,4 @@
 - [x] [Testing (базовые вопросы по тестированию)](./questions/testing.md)
 - [x] [Tools (вопросы по различным инструментам веб-разработки)](./questions/tools.md)
 - [x] [Soft skills (вопросы по нетехническим навыкам)](./questions/soft-skills.md)  
-- [ ] [Практические задачи (решения типовых задач)](./questions/practical-tasks.md)
+- [x] [Практические задачи (решения типовых задач)](./questions/practical-tasks.md)
