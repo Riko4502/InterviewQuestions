@@ -46,7 +46,7 @@ const f4 = async () => {
 ```
 
 **Какая будет последовательность**
-
+```
 console.log("start");
 
 const promise1 = Promise.resolve().then(() => {
@@ -68,3 +68,4 @@ const timer1 = setTimeout(() => {
 console.log("end");
 
 //start end promise1  timer1 promise2 timer2
+```
