@@ -11,7 +11,6 @@
 
 - [x] [Web Technologies (общие вопросы по веб-разработке)](./questions/web.md)
 - [x] [Web API (вопросы из веб API)](./questions/web-api.md)
-- [x] [Accessibility (вопросы по доступности)](./questions/accessibility.md)
 <hr />
 <h4>
   <span>HTML and CSS:</span>
@@ -19,6 +18,7 @@
 
 - [ ] [HTML (вопросы по языку гипертекстовой разметки)](./questions/html.md)
 - [x] [CSS (вопросы по каскадным таблицам стилей)](./questions/css.md)
+- [x] [Accessibility (вопросы по доступности)](./questions/accessibility.md)
 <hr />
 
 <h4>
@@ -31,7 +31,8 @@
 - [x] [JS in Browser (вопросы из браузерного JavaScript)](./questions/browser-js.md)
 - [x] [Async JS (вопросы из асинхронного JavaScript)](./questions/async-js.md)
 - [x] [ECMAScript (вопросы из стандарта ECMAScript)](./questions/es.md)
-- [x] [Практические задачи по JS (решения типовых задач) ](./questions/practical-tasks-js.md)
+- [x] [Практические задачи по JS (решения типовых задач) ](./practical/js.md)
+- [ ] [Практические задачи по Async JS (решения типовых задач) ](./practical/async-js.md)
 <hr />
 
 <h4>
@@ -43,7 +44,8 @@
 - [x] [React (вопросы по библиотеке React)](./questions/react.md)
 - [x] [State management (вопросы по менеджменту состояния)](./questions/state-management.md)
 - [x] [TypeScript (вопросы по языку TypeScript)](./questions/ts.md)
-- [ ] [Практические задачи по React (решения типовых задач) ](./questions/practical-tasks-react.md)
+- [ ] [Практические задачи по React (решения типовых задач) ](./practical/react.md)
+- [ ] [Практические задачи по TypeScript (решения типовых задач) ](./practical/ts.md)
 <hr />
 <h4>
   <span>Ты не понимаешь, это другое:</span>
