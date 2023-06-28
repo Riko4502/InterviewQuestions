@@ -37,6 +37,7 @@
 <h4>
   <span>React, TypeScript, State manager:</span>
 </h4>
+
 <!-- - [Vue.js (вопросы по фрэймворку Vue.js)](./questions/vue-js.md)-->
 <!-- - [Angular (вопросы по фрэймворку Angular)](./questions/angular.md) -->
 - [x] [React (вопросы по библиотеке React)](./questions/react.md)
