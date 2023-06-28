@@ -11,7 +11,7 @@
 - [x] [JavaScript (вопросы по языку JavaScript)](./questions/js.md)
 - [x] [JS in Browser (вопросы из браузерного JavaScript)](./questions/browser-js.md)
 - [x] [Async JS (вопросы из асинхронного JavaScript)](./questions/async-js.md)
-- [ ] [ECMAScript (вопросы из стандарта ECMAScript)](./questions/es.md)
+- [x] [ECMAScript (вопросы из стандарта ECMAScript)](./questions/es.md)
 - [x] [Accessibility (вопросы по доступности)](./questions/accessibility.md)
 - [x] [TypeScript (вопросы по языку TypeScript)](./questions/ts.md)
 - [x] [React (вопросы по библиотеке React)](./questions/react.md)
