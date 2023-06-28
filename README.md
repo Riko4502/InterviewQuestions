@@ -31,7 +31,7 @@
 - [x] [JS in Browser (вопросы из браузерного JavaScript)](./questions/browser-js.md)
 - [x] [Async JS (вопросы из асинхронного JavaScript)](./questions/async-js.md)
 - [x] [ECMAScript (вопросы из стандарта ECMAScript)](./questions/es.md)
-- [x] [Практические задачи (решения типовых задач)](./questions/practical-tasks.md)
+- [x] [Практические задачи по JS (решения типовых задач) ](./questions/practical-tasks-js.md)
 <hr />
 
 <h4>
@@ -43,6 +43,7 @@
 - [x] [React (вопросы по библиотеке React)](./questions/react.md)
 - [x] [State management (вопросы по менеджменту состояния)](./questions/state-management.md)
 - [x] [TypeScript (вопросы по языку TypeScript)](./questions/ts.md)
+- [ ] [Практические задачи по React (решения типовых задач) ](./questions/practical-tasks-react.md)
 <hr />
 <h4>
   <span>Ты не понимаешь, это другое:</span>
