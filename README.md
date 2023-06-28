@@ -16,7 +16,7 @@
   <span>HTML and CSS:</span>
 </h4>
 
-- [ ] [HTML (вопросы по языку гипертекстовой разметки)](./questions/html.md)
+- [x] [HTML (вопросы по языку гипертекстовой разметки)](./questions/html.md)
 - [x] [CSS (вопросы по каскадным таблицам стилей)](./questions/css.md)
 - [x] [Accessibility (вопросы по доступности)](./questions/accessibility.md)
 <hr />
@@ -31,7 +31,7 @@
 - [x] [JS in Browser (вопросы из браузерного JavaScript)](./questions/browser-js.md)
 - [x] [Async JS (вопросы из асинхронного JavaScript)](./questions/async-js.md)
 - [x] [ECMAScript (вопросы из стандарта ECMAScript)](./questions/es.md)
-- [x] [Практические задачи по JS (решения типовых задач) ](./practical/js.md)
+- [ ] [Практические задачи по JS (решения типовых задач) ](./practical/js.md)
 - [ ] [Практические задачи по Async JS (решения типовых задач) ](./practical/async-js.md)
 <hr />
 
