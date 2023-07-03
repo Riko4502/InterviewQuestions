@@ -69,3 +69,171 @@ console.log("end");
 
 //start end promise1  timer1 promise2 timer2
 ```
+
+**Какая будет последовательность**
+```
+function print() {
+    console.log(1);
+};
+
+function paint () {
+    console.log(2);
+};
+
+setTimeout(() => console.log(3), 0);
+
+async function foo() {
+    console.log(4);
+    await print();
+    console.log(5);
+    setTimeout(() => console.log(6), 0);
+    await paint();
+}
+
+console.log(7);
+foo();
+console.log(8);
+```
+
+Ответ: // 7 4 1 5 2 8 3 6
+
+**Какая будет последовательность**
+const a = setTimeout(() => console.log(2), 2000);
+const d = setTimeout(() => console.log(6), 1000);
+
+const c = new Promise( (resolve) => {
+   setTimeout(() => resolve(), 1000);
+   console.log(4);
+});
+
+c.then(() => console.log(1));
+
+const b = setTimeout(() => console.log(5), 1000);
+
+console.log(3);
+
+// 4 3 6 1 5 2
+
+
+**Какая будет последовательность**
+
+    setTimeout(() => console.log(3), 2000);
+console.log(4);
+
+new Promise((res, rej) => {
+    setTimeout(() => res());
+})
+    .then(() => console.log(1))
+    .catch(() => console.log(2));
+
+queueMicrotask(() => {
+    console.log(5);
+    queueMicrotask(() => {
+        requestAnimationFrame(() => {
+            console.log(8);
+        });
+        queueMicrotask(() => {
+            console.log(7);
+        });
+    });
+});
+
+requestAnimationFrame(() => {
+    console.log(3);
+    requestAnimationFrame(() => {
+        console.log(6);
+    });
+});
+
+console.log(9);
+
+
+**Какая будет последовательность**
+
+const firstPromise = new Promise((resolve, reject) => {
+  setTimeout(resolve, 500, 'один');
+});
+
+const secondPromise = new Promise((resolve, reject) => {
+  setTimeout(reject, 100, 'два');
+});
+
+Promise.all([firstPromise, secondPromise])
+  .then(res => console.log(res))
+  .catch(err => console.log(err));
+
+Promise.allSettled([firstPromise, secondPromise])
+  .then(res => console.log(res))
+  .catch(err => console.log(err));
+
+Promise.any([firstPromise, secondPromise])
+  .then(res => console.log(res))
+  .catch(err => console.log(err));
+
+Promise.race([firstPromise, secondPromise])
+  .then(res => console.log(res))
+  .catch(err => console.log(err));
+
+
+**Какая будет последовательность**
+
+try {
+	new Promise((res) => {
+		a++
+		console.log(a);
+		res(a);
+	})
+	.then(i => {
+		console.log(i);
+		a++;
+		console.log(a);
+		return a + i;
+	})
+	.catch((error) => {
+		console.log(error)
+		a++;
+		return a;
+	})
+	.then((value) => console.log(value))
+	.catch((error) => console.log(error));
+
+	let a = 1;
+} catch (e) {
+	console.log(e);
+}
+
+Ответ: error 2  
+
+
+**Какая будет последовательность**
+setTimeout(() => console.log(3), 2000);
+console.log(4);
+
+new Promise((res, rej) => {
+	setTimeout(() => res());
+})
+    .then(() => console.log(1))
+    .catch(() => console.log(2));
+
+queueMicrotask(() => {
+	console.log(5);
+	queueMicrotask(() => {
+		requestAnimationFrame(() => {
+			console.log(8);
+		});
+		queueMicrotask(() => {
+			console.log(7);
+		});
+	});
+});
+
+requestAnimationFrame(() => {
+	console.log(3);
+	requestAnimationFrame(() => {
+		console.log(6);
+	});
+});
+
+console.log(9);
+
+Ответ: 4 9 5 7 3 8 1 6 3
