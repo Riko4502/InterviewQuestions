@@ -98,6 +98,7 @@ console.log(8);
 Ответ: // 7 4 1 5 2 8 3 6
 
 **Какая будет последовательность**
+```
 const a = setTimeout(() => console.log(2), 2000);
 const d = setTimeout(() => console.log(6), 1000);
 
@@ -111,13 +112,13 @@ c.then(() => console.log(1));
 const b = setTimeout(() => console.log(5), 1000);
 
 console.log(3);
-
+```
 // 4 3 6 1 5 2
 
 
 **Какая будет последовательность**
-
-    setTimeout(() => console.log(3), 2000);
+```
+setTimeout(() => console.log(3), 2000);
 console.log(4);
 
 new Promise((res, rej) => {
@@ -146,10 +147,10 @@ requestAnimationFrame(() => {
 });
 
 console.log(9);
-
+```
 
 **Какая будет последовательность**
-
+```
 const firstPromise = new Promise((resolve, reject) => {
   setTimeout(resolve, 500, 'один');
 });
@@ -173,10 +174,10 @@ Promise.any([firstPromise, secondPromise])
 Promise.race([firstPromise, secondPromise])
   .then(res => console.log(res))
   .catch(err => console.log(err));
-
+```
 
 **Какая будет последовательность**
-
+```
 try {
 	new Promise((res) => {
 		a++
@@ -201,11 +202,12 @@ try {
 } catch (e) {
 	console.log(e);
 }
-
+```
 Ответ: error 2  
 
 
 **Какая будет последовательность**
+```
 setTimeout(() => console.log(3), 2000);
 console.log(4);
 
@@ -235,5 +237,6 @@ requestAnimationFrame(() => {
 });
 
 console.log(9);
+```
 
 Ответ: 4 9 5 7 3 8 1 6 3
