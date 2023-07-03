@@ -1,7 +1,6 @@
 ### Базовые задачи на знание синтаксиса и встроенных методов
 * [Практические задачи по Async JS (решения типовых задач) ](./practical/js/async-js.md)
 * [Практические задачи по JS (решения типовых задач) ](./practical/js/js.md)
-
 * [String](./practical/basic/strings.md)
 * [Number](./practical/basic/numbers.md)
 * [Array](./practical/basic/arrays.md)
