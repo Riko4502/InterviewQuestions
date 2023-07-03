@@ -3,7 +3,7 @@
 </h3>
 
 **Какая будет последовательность**
-```
+```js
 const main = () => {
     const f1 = () => console.log("f1");
     const f2 = () => console.log("f2");
@@ -31,7 +31,7 @@ main();
 ```
 
 **Какая будет последовательность**
-```
+```js
 const f4 = async () => {
     console.log("f4");
     setTimeout(f1, 0);
@@ -46,7 +46,7 @@ const f4 = async () => {
 ```
 
 **Какая будет последовательность**
-```
+```js
 console.log("start");
 
 const promise1 = Promise.resolve().then(() => {
@@ -71,7 +71,7 @@ console.log("end");
 ```
 
 **Какая будет последовательность**
-```
+```js
 function print() {
     console.log(1);
 };
@@ -98,7 +98,7 @@ console.log(8);
 Ответ: // 7 4 1 5 2 8 3 6
 
 **Какая будет последовательность**
-```
+```js
 const a = setTimeout(() => console.log(2), 2000);
 const d = setTimeout(() => console.log(6), 1000);
 
@@ -113,11 +113,19 @@ const b = setTimeout(() => console.log(5), 1000);
 
 console.log(3);
 ```
+
+<details><summary><b>Решение</b></summary>
+<p>
+
 // 4 3 6 1 5 2
+
+</p>
+</details>
+
 
 
 **Какая будет последовательность**
-```
+```js
 setTimeout(() => console.log(3), 2000);
 console.log(4);
 
@@ -150,7 +158,7 @@ console.log(9);
 ```
 
 **Какая будет последовательность**
-```
+```js
 const firstPromise = new Promise((resolve, reject) => {
   setTimeout(resolve, 500, 'один');
 });
@@ -177,7 +185,7 @@ Promise.race([firstPromise, secondPromise])
 ```
 
 **Какая будет последовательность**
-```
+```js
 try {
 	new Promise((res) => {
 		a++
@@ -203,11 +211,17 @@ try {
 	console.log(e);
 }
 ```
-Ответ: error 2  
 
+<details><summary><b>Решение</b></summary>
+<p>
 
+Ответ: error 2 
+
+</p>
+</details>
+ 
 **Какая будет последовательность**
-```
+```js
 setTimeout(() => console.log(3), 2000);
 console.log(4);
 
@@ -239,4 +253,11 @@ requestAnimationFrame(() => {
 console.log(9);
 ```
 
+<details><summary><b>Решение</b></summary>
+<p>
+
 Ответ: 4 9 5 7 3 8 1 6 3
+
+</p>
+</details>
+ 

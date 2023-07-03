@@ -4,19 +4,43 @@
 
 **Функция проверки палиндрома?**
 
-```
+```js
 function isPalindrome(str) {
-  const reversedStr = str.split('').reverse().join('');
-  return str === reversedStr;
+  // Решение
 }
 
 console.log(isPalindrome('racecar')); // true
 console.log(isPalindrome('hello')); // false
 ```
 
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+function isPalindrome(str) {
+  const reversedStr = str.split('').reverse().join('');
+  return str === reversedStr;
+}
+```
+
+</p>
+</details>
+
 **Функция поиска самого короткого слова?**
 
+```js
+function findShortestWord(str) {
+  // Решение
+}
+
+console.log(findShortestWord('I love js')); // "I"
+console.log(findShortestWord('Hello world')); // "world"
 ```
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
 function findShortestWord(str) {
   const words = str.split(' ');
   let shortestWord = words[0];
@@ -27,66 +51,126 @@ function findShortestWord(str) {
   }
   return shortestWord;
 }
-
-console.log(findShortestWord('I love JavaScript')); // "I"
-console.log(findShortestWord('Hello world')); // "world"
 ```
+
+</p>
+</details>
 
 **Функция создания инициалов?**
 
-```
+```js
 function createInitials(name) {
-  const names = name.split(' ');
-  const initials = names.map((name) => name[0].toUpperCase()).join('');
-  return initials;
+  // Решение
 }
 
 console.log(createInitials('John Doe')); // "JD"
 console.log(createInitials('Alice Bob Cooper')); // "ABC"
 ```
 
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+function createInitials(name) {
+  const names = name.split(' ');
+  const initials = names.map((name) => name[0].toUpperCase()).join('');
+  return initials;
+}
+```
+
+</p>
+</details>
+
 **Функция суммирования всех цифр числа?**
 
-```
+```js
 function sumDigits(number) {
-  const digits = number.toString().split('');
-  const sum = digits.reduce((total, digit) => total + parseInt(digit), 0);
-  return sum;
+  // Решение
 }
 
 console.log(sumDigits(12345)); // 15
 console.log(sumDigits(9876)); // 30
 ```
 
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+function sumDigits(number) {
+  const digits = number.toString().split('');
+  const sum = digits.reduce((total, digit) => total + parseInt(digit), 0);
+  return sum;
+}
+```
+
+</p>
+</details>
+
 **Функция поиска минимального и максимального значений в массиве?**
 
-```
+```js
 function findMinMax(arr) {
-  const min = Math.min(...arr);
-  const max = Math.max(...arr);
-  return [min, max];
+  // Решение
 }
 
 console.log(findMinMax([3, 7, 2, 9, 1])); // [1, 9]
 console.log(findMinMax([-5, 0, 10, -2, 8])); // [-5, 10]
 ```
 
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+function findMinMax(arr) {
+  const min = Math.min(...arr);
+  const max = Math.max(...arr);
+  return [min, max];
+}
+```
+
+</p>
+</details>
+
 **Функция создания набора дубликатов символов строки?**
 
-```
+```js
 function createDuplicates(str) {
-  const chars = str.split('');
-  const duplicates = chars.map((char) => char + char).join('');
-  return duplicates;
+  // Решение
 }
 
 console.log(createDuplicates('hello')); // "hheelllloo"
 console.log(createDuplicates('1234')); // "11223344"
 ```
 
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+function createDuplicates(str) {
+  const chars = str.split('');
+  const duplicates = chars.map((char) => char + char).join('');
+  return duplicates;
+}
+```
+
+</p>
+</details>
+
 **Функция возврата индексов заглавных букв строки?**
 
+```js
+function findUpperCaseIndexes(str) {
+  // Решение
+}
+
+console.log(findUpperCaseIndexes('HelloWorld')); // [0, 5]
+console.log(findUpperCaseIndexes('js')); // [0, 4]
 ```
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
 function findUpperCaseIndexes(str) {
   const indexes = [];
   for (let i = 0; i < str.length; i++) {
@@ -96,18 +180,16 @@ function findUpperCaseIndexes(str) {
   }
   return indexes;
 }
-
-console.log(findUpperCaseIndexes('HelloWorld')); // [0, 5]
-console.log(findUpperCaseIndexes('JavaScript')); // [0, 4]
 ```
+
+</p>
+</details>
 
 **Функция вывода чисел от 1 до n (n - передаваемый аргумент)**
 
-```
+```js
 function printNumbers(n) {
-  for (let i = 1; i <= n; i++) {
-    console.log(i);
-  }
+ //Решение
 }
 
 printNumbers(5);
@@ -119,23 +201,49 @@ printNumbers(5);
 // 5
 ```
 
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+function printNumbers(n) {
+  for (let i = 1; i <= n; i++) {
+    console.log(i);
+  }
+}
+```
+
+</p>
+</details>
+
 **Функция возврата уникальных значений из нескольких массивов?**
 
-```
+```js
 function getUniqueValues(...arrays) {
-  const mergedArray = [].concat(...arrays);
-  const uniqueValues = [...new Set(mergedArray)];
-  return uniqueValues;
+  // Решение
 }
 
 console.log(getUniqueValues([1, 2, 3], [2, 3, 4], [3, 4, 5])); // [1, 2, 3, 4, 5]
 console.log(getUniqueValues(['a', 'b', 'c'], ['b', 'c', 'd'], ['c', 'd', 'e'])); // ["a", "b", "c", "d", "e"]
 ```
 
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+function getUniqueValues(...arrays) {
+  const mergedArray = [].concat(...arrays);
+  const uniqueValues = [...new Set(mergedArray)];
+  return uniqueValues;
+}
+```
+
+</p>
+</details>
+
 
 **Фунция сортировки даты и разделение на года**
 
-```
+```js
 const opertions = [
   {'date': '2017-07-31'},
   {'date': '2017-06-30'},
@@ -161,9 +269,10 @@ const output = {
 
 ```
 
-Решение 
+<details><summary><b>Решение</b></summary>
+<p>
 
-```
+```js
 function sortOperations(arr) {
   const result = {};
 
@@ -185,6 +294,9 @@ function sortOperations(arr) {
 }
 ```
 
+</p>
+</details>
+
 **Что выведет консоль**
 
 ```
@@ -204,4 +316,8 @@ const object = {
 object.method(callback, 1, 2, 3, 5); // ?
 ```
 
-***Ответ:*** **5**
+<details><summary><b>Решение</b></summary>
+<p>
+Ответ: 5
+</p>
+</details>
