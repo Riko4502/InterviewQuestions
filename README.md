@@ -31,7 +31,7 @@
 - [x] [JS in Browser (вопросы из браузерного JavaScript)](./questions/js/browser-js.md)
 - [x] [Async JS (вопросы из асинхронного JavaScript)](./questions/js/async-js.md)
 - [x] [ECMAScript (вопросы из стандарта ECMAScript)](./questions/js/es.md)
-- [x] [Практические задачи по JS (решения типовых задач) ](./practical/js/js/index.md)
+- [x] [Практические задачи по JS (решения типовых задач) ](./practical/js/index.md)
 
 <hr />
 <h4>
